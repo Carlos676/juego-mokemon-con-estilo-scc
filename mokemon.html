@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mokemon</title>
+    <link rel="stylesheet" href="./estilos/styles.css">
+</head>
+<body>
+    <section id="seleccina-mascota">
+        <h1 class="titulo">Juego Pokemon</h1>
+        <h2 class="subtitulo">Elige mascota</h2>
+        <div class="tarjetas">
+            <input type="radio" name="mascota" id="hipo">
+            <label class="tarjeta-mokepon" for="hipo">
+                <p>Hipodoge</p>
+                <img src="./imagen/mokepons_mokepon_hipodoge_attack-4e83b55e-c381-4098-9a9d-40d86921d2a7.webp">
+            </label>
+            <input type="radio" name="mascota" id="capi">
+            <label class="tarjeta-mokepon" for="capi">
+                <p>Capipepo</p>
+                <img src="./imagen/mokepons_mokepon_capipepo_attack-1dc6228d-c376-44d0-bc7d-66fa8cd91197.webp">
+            </label>
+            <input type="radio" name="mascota" id="rati">
+            <label class="tarjeta-mokepon" for="rati">
+                <p>Ratiweya</p>
+                <img src="./imagen/mokepons_mokepon_ratigueya_attack-b0c80a77-499a-49b6-a722-eab23f055cec.webp">
+            </label>
+            
+            
+        </div>
+        <button id="boton-mascota">Seleccionar</button>
+    </section>
+    <section id="selecciona-ataque">
+        <h1 class="titulo">Mokemon</h1>
+        <h2 class="subtitulo">Elige tu ataque</h2>
+        <div class="tarjeta-ataques">
+            <button id="boton-fuego" class="boton-ataque">Fuego 🔥</button>
+            <button id="boton-agua" class="boton-ataque">Agua 💧</button>
+            <button id="boton-tierra" class="boton-ataque">tierra 🌱</button>
+        </div>
+
+        <div>
+            <section id="mensajes">
+                <p id="resultado">Mucha suerte</p>
+            </section>
+            <section id="reiniciar">
+                <button id="boton-reiniciar">Reiniciar</button>
+            </section>
+           
+        </div>
+
+        <div class="ataques">
+            
+            <div class="ataque-jugador">
+                <p id="vida-jugador">3</p>
+                <p id="mascota-jugador"></p>
+                <div id="ataque-jugador"></div>
+            </div>
+            <div class="ataque-enemigo">
+                <p id="vida-enemigo">3</p>
+                <p id="mascota-enemigo"></p>
+                <div id="ataque-enemigo"></div>
+            </div>
+        
+        </div>
+        
+    </section>
+    
+    <script src="./js/mokemon.js"></script>
+
+</body>
+</html>
